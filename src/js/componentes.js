@@ -9,6 +9,7 @@ const txtInput = document.querySelector('.new-todo');
 const btnBorrar = document.querySelector('.clear-completed');
 const ulFiltros =  document.querySelector('.filters');
 const anchorFiltros = document.querySelectorAll('.filtro');
+const countPendientes = document.querySelector('.todo-count');
 
 export const crearTodoHtml = ( todo ) => {
 
@@ -30,6 +31,12 @@ export const crearTodoHtml = ( todo ) => {
 
     return div.firstElementChild;
 }
+
+// pendientes
+export const actualizarPendientes = () => 
+    countPendientes.innerHTML = `${todoList.contarPendientes()} Pendiente(s)`;
+
+
 
 //Eventos
 
@@ -62,6 +69,8 @@ divTodoList.addEventListener( 'click' , ( event ) => {
         divTodoList.removeChild( liElement );
 
     }
+
+    actualizarPendientes();
 
 } )
 
@@ -112,3 +121,5 @@ ulFiltros.addEventListener('click' , ( event) => {
     }
 
 })
+
+console.log(countPendientes)

@@ -1,16 +1,23 @@
 
-# Webpack Starter
+# Todo app
 
-Este es le proyecto inicial para crear aplicaciones utilizando webpack
+Esta es una aplicacion de tareas
 
 ### Notas
+Para usar este repositorio
 Recuerden reconstruir los modúlos de Node
 ..........
 
 npm install
 ..........
 
-y para construir el build, recuerden:
+para correr la aplicación en local:
+..........
+
+npm run start
+,,,,,,,,,
+
+para construir el build:
 ..........
 
 npm run build

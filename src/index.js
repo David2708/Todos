@@ -1,14 +1,13 @@
 import './styles.css';
 
 import { Todo, TodoList } from './classes'
-import { crearTodoHtml } from './js/componentes';
+import { crearTodoHtml, actualizarPendientes } from './js/componentes';
 
 export const todoList = new TodoList;
 
 //-----------------------------------
 
-//  renderizamos los todos que se encuentran en el localStorage
+//  renderizamos los todos que se encuentran en el localStarage
 todoList.todos.forEach(todo => crearTodoHtml( todo ));
+actualizarPendientes();
 
-//tambien se puede hacer asi:
-// todoList.todos.forEach(crearTodoHtml);
