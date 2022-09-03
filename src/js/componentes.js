@@ -49,6 +49,7 @@ txtInput.addEventListener( 'keyup', ( event )=> {
         txtInput.value = '';
         
     }
+    actualizarPendientes();
 
 } );
 
